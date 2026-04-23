@@ -1,0 +1,81 @@
+.content {
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1024px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.content-cart {
+  display: grid;
+  grid-template-areas: 'info info' 'list amount';
+  column-gap: 60px;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+}
+
+.cart-title {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  grid-area: info;
+}
+
+.cart-title span {
+  font-weight: 800;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type='number'],
+input[type='number']:hover,
+input[type='number']:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.button_type_ligth {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.button_type_ligth:hover {
+  background-color: #eceff1;
+}
+
+.button_type_secondary {
+  background-color: transparent;
+  border-color: #cfd8dc;
+  color: #1a1a1a;
+}
+
+.button_type_secondary:hover {
+  border-color: #7b8e98;
+}
+
+.button_type_border {
+  background-color: transparent;
+  border-color: #cfd8dc;
+  color: #1a1a1a;
+}
+
+.button_type_border:hover {
+  border-color: #7b8e98;
+}
+
+.button_type_box {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.02), 0px 2px 16px rgba(96, 97, 112, 0.16);
+  border-radius: 60px;
+  padding: 16px 16px 16px 28px;
+}

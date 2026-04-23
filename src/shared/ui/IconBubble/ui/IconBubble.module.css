@@ -1,0 +1,17 @@
+.iconBubble {
+  position: absolute;
+  bottom: 60%;
+  left: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: #01a54e;
+  border: 2px solid #ffe44d;
+  border-radius: 50%;
+}
