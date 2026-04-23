@@ -22,8 +22,6 @@
     "css-loader": "^6.8.1",
     "cssnano": "^6.0.1",
     "cz-conventional-changelog": "^3.3.0",
-    "esbuild": "^0.28.0",
-    "esbuild-plugin-svgr": "^3.1.1",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
@@ -55,8 +53,6 @@
   "scripts": {
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.js --env env=prod",
     "start:webpack": "webpack serve --config webpack/webpack.config.js --env env=dev",
-    "build:esbuild": "cross-env NODE_ENV=production node esbuild/esbuild.dev.mjs",
-    "start:esbuild": "node esbuild/esbuild.dev.mjs --watch",
     "stylelint": "stylelint \"src/**/*.css\"",
     "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
