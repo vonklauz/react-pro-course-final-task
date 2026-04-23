@@ -22,7 +22,6 @@ const ctx = await esbuild.context({
   format: 'esm',
   bundle: true,
   outdir: 'dist',
-  splitting: true,
   sourcemap: true,
   loader: {
     '.png': 'file',

@@ -21,25 +21,18 @@ fs.mkdirSync(distDir, { recursive: true });
 
 const result = await esbuild.build({
   entryPoints: [srcEntry],
-
   outdir: distDir,
-
   bundle: true,
   minify: true,
   sourcemap: false,
-
   format: 'esm',
   splitting: true,
   target: ['es2022'],
-
   jsx: 'automatic',
-
   entryNames: 'static/[name]-[hash]',
   chunkNames: 'static/chunks/[name]-[hash]',
   assetNames: 'static/assets/[name]-[hash]',
-
   metafile: true,
-
   loader: {
     '.png': 'file',
     '.jpg': 'file',
@@ -54,9 +47,7 @@ const result = await esbuild.build({
 
     '.css': 'css',
   },
-
   plugins: [svgrPlugin()],
-
   define: {
     'process.env.NODE_ENV': JSON.stringify('production'),
     'process.env.API_URL': JSON.stringify(process.env.API_URL ?? ''),
@@ -72,7 +63,6 @@ const result = await esbuild.build({
   },
 });
 
-// find generated entry js/css
 const outputs = result.metafile.outputs;
 
 let jsFile = '';
@@ -98,4 +88,4 @@ html = html.replace('</body>', `  <script type="module" src="/${jsFile}"></scrip
 
 fs.writeFileSync(distHtml, html);
 
-console.log('✅ Production build complete');
+console.log('Production build complete');
