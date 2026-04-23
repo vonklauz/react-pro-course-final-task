@@ -6,7 +6,9 @@ import { memo } from 'react';
 export const Logo = memo(() => {
   return (
     <Link to='/'>
-      <img className={s['logo__pic']} src={LogoIcon} alt='Логотип компании' />
+      <div className={s['logo__pic']}>
+        <LogoIcon />
+      </div>
     </Link>
   );
 });

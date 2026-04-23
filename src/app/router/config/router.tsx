@@ -1,13 +1,23 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { HomePage } from 'pages/HomePage';
-import { ProductPage } from 'pages/ProductPage';
-import { NotFoundPage } from 'pages/NotFoundPage';
-import { ProfilePage } from 'pages/ProfilePage';
-import { FavoritesPage } from 'pages/FavoritesPage';
-import { SignUpPage } from 'pages/SignUpPage';
-import { SignInPage } from 'pages/SignInPage';
-import { CartPage } from 'pages/CartPage';
 import { App } from 'app';
+import { lazy } from 'react';
+
+const HomePage = lazy(() => import('pages/HomePage').then((module) => ({ default: module.HomePage })));
+const ProductPage = lazy(() =>
+  import('pages/ProductPage').then((module) => ({ default: module.ProductPage }))
+);
+const NotFoundPage = lazy(() =>
+  import('pages/NotFoundPage').then((module) => ({ default: module.NotFoundPage }))
+);
+const ProfilePage = lazy(() =>
+  import('pages/ProfilePage').then((module) => ({ default: module.ProfilePage }))
+);
+const FavoritesPage = lazy(() =>
+  import('pages/FavoritesPage').then((module) => ({ default: module.FavoritesPage }))
+);
+const SignUpPage = lazy(() => import('pages/SignUpPage').then((module) => ({ default: module.SignUpPage })));
+const SignInPage = lazy(() => import('pages/SignInPage').then((module) => ({ default: module.SignInPage })));
+const CartPage = lazy(() => import('pages/CartPage').then((module) => ({ default: module.CartPage })));
 
 export enum AppRoutes {
   HOME = 'home',

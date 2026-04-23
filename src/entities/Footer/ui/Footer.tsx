@@ -63,27 +63,27 @@ export const Footer = memo(() => {
               <ul className={classNames(s['socials'])}>
                 <li>
                   <a className={s['socials__link']} href='/#'>
-                    <img src={Telegram} alt='telegram' />
+                    <Telegram />
                   </a>
                 </li>
                 <li>
                   <a className={s['socials__link']} href='/#'>
-                    <img src={Whatsapp} alt='whatsapp' />
+                    <Whatsapp />
                   </a>
                 </li>
                 <li>
                   <a className={s['socials__link']} href='/#'>
-                    <img src={Viber} alt='viber' />
+                    <Viber />
                   </a>
                 </li>
                 <li>
                   <a className={s['socials__link']} href='/#'>
-                    <img src={Instagram} alt='instagram' />
+                    <Instagram />
                   </a>
                 </li>
                 <li>
                   <a className={s['socials__link']} href='/#'>
-                    <img src={Vk} alt='vk' />
+                    <Vk />
                   </a>
                 </li>
               </ul>

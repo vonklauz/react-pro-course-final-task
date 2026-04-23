@@ -1,5 +1,5 @@
 import s from './LikeButton.module.css';
-import { ReactComponent as LikeSvg } from 'shared/assets/icons/like.svg';
+import LikeSvg from 'shared/assets/icons/like.svg';
 import classNames from 'classnames';
 import { toast } from 'react-toastify';
 import { useAppSelector } from 'shared/store/utils';
